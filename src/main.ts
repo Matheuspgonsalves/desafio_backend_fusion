@@ -1,4 +1,4 @@
-import routes from "./http/routes"
+import routes from "./http/routes/index.routes"
 
 const express = require('express');
 const app = express();

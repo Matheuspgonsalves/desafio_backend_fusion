@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createPlanets } from "../controllers/planets/createPlanets.controller";
+import { createPlanetsController } from "../controllers/planets/createPlanets.controller";
 import { getAllPlanets } from "../controllers/planets/getAllPlanets.controller";
 import { getPlanetsById } from "../controllers/planets/getPlanetsById.controller";
 import { updatePlanetsById } from "../controllers/planets/updatePlanetsById.controller";
@@ -7,7 +7,7 @@ import { deletePlanetsById } from "../controllers/planets/deletePlanetsById.cont
 
 const router = Router();
 
-router.post('/', createPlanets);
+router.post('/', createPlanetsController);
 router.get('/', getAllPlanets);
 router.get('/:id', getPlanetsById);
 router.put('/:id', updatePlanetsById);
